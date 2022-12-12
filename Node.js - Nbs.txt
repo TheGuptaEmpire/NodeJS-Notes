@@ -1,0 +1,55 @@
+Common Function In Node.Js =>
+
+readFileSync();
+replace("word to be replaced", "word replaced");
+writeFileSync() => To write a new code
+
+NPM(Node Package Manager) =>
+npm install => To install something
+npm uninstall => To uninstall something
+npm i slugify => To install slugify
+npm --version => To view its version
+node --version => To view its version
+npm init => write npm init on the terminal, it asks several questions like the package name, version, description, entry point, keyword, author, etc. => 
+To make a package.json inside the mentioned directory
+npm install slugify@1.3.5 => To install a particular slugify version. Note 1 => Major, 3 => minor, 5 => patch(bug-fixes)
+npm intall nodemon --save-dev => It gives us the server which automatically gets restart every time
+
+Benifit of using local host 80 => can get the server without searching 80.
+
+PUG =>
+// For serving static files
+app.use('/static', express.static('static'));
+
+// Set the template engine as pug
+app.set('view engine', 'pug')
+
+// Set the views directory
+app.set("views", path.join(__dirname, 'views'))
+
+// Our pug demo endpoint
+app.get("/demo", (req, res)=>{ 
+    res.status(200).render('demo', { title: 'Hey', message: 'Hello there and thanks for telling me how to use pubG!' })
+});
+
+Block Code In PUG =>
+Block Scripts justifies the place of adding scripts and in the script part is used to javascript.
+Block content and block footer are used to write content and footer text.
+
+Document Oriented Data Base => Data Base which stores its data as documents.
+
+Mongo DB => Default 27017
+
+ insertMany => To insert multiple objects
+ insertOne => To insert one objects 
+ db.items.find => To display all the objects objects
+
+When you start mongod you're basically saying "start the MongoDB process and run it
+ in the background". mongod has several default parameters, such as storing data
+ in /data/db and running on port 27017. mongo is the command-line shell that
+ connects to a specific instance of mongod 
+ db.items.deleteOne => To delete one item from database 
+ db.items.deleteMany =>  To delete many items from the database
+
+Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
+If you want to add additional keys later, use the Schema#add method.
